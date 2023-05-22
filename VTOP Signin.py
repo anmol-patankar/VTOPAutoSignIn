@@ -8,8 +8,8 @@ from selenium.webdriver.common.keys import Keys
 options = webdriver.ChromeOptions()
 options.add_experimental_option("detach", True)
 options.add_experimental_option("excludeSwitches", ['enable-automation'])
-
 driver = webdriver.Chrome(options=options)
+
 driver.get("https://vtop.vitbhopal.ac.in/vtop")
 
 loginToVTOPButton=driver.find_element("xpath","//*[@id='page-wrapper']/div/div[1]/div[1]/div[3]/div/button")
@@ -37,3 +37,4 @@ captchafield=driver.find_element(By.CSS_SELECTOR, "input[name='captchaCheck'][ty
 captchafield.send_keys(imgprocess.captchaAns)
 signinButton=driver.find_element("xpath","//*[@id='captcha']")
 signinButton.click()
+input()
