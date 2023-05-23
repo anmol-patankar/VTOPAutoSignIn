@@ -1,6 +1,5 @@
 from PIL import Image
 from Levenshtein import distance as levdist
-import time
 import json
 from difflib import SequenceMatcher
 captchaAns=""
