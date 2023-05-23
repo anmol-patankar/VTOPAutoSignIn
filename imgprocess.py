@@ -22,8 +22,6 @@ def ImagePreprocess():
     cwidth,bottom=rgbimg.size
     
 
-
-
 def LoadBitMap():
     global alphanum
     with open('captcha_bitmap.txt') as f:
