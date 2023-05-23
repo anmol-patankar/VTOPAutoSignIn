@@ -1,7 +1,6 @@
 from PIL import Image
 from Levenshtein import distance as levdist
 import json
-from difflib import SequenceMatcher
 captchaAns=""
 count=1
 left=0

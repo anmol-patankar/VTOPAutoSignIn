@@ -1,9 +1,7 @@
 from selenium import webdriver
-from PIL import Image
 from selenium.webdriver.common.by import By
 import time
 import urllib
-from selenium.webdriver.common.keys import Keys
 
 user=str(input())
 passwd=str(input())
