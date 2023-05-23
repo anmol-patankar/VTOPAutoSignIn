@@ -1,3 +1,8 @@
+############## local data files ##############
+captcha.png
+captcha_clean.png
+captcha_bitmap.json
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
