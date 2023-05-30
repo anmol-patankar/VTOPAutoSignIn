@@ -1,8 +1,4 @@
 selenium
 Levenshtein
-PIL
-time
-urllib
-json
-
+pillow
 
