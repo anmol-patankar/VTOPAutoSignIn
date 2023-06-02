@@ -3,8 +3,8 @@ from selenium.webdriver.common.by import By
 import time
 import urllib
 
-user=str(input())
-passwd=str(input())
+user=str(input("Enter VTOP User ID: "))
+passwd=str(input("Enter VTOP Password: "))
 
 #user="USERNAME_HERE"
 #passwd="PASSWORD_HERE"
