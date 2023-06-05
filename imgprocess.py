@@ -19,12 +19,12 @@ def ImagePreprocess():
     rgbimg.save('captcha_clean.png')
     cwidth,bottom=rgbimg.size
     
-
 def LoadBitMap():
     global alphanum
     with open('captcha_bitmap.txt') as f:
         data=f.read()
     alphanum=json.loads(data)
+    
 def EvaluateChar(stri):
     temp=-1
     currentmaxsim=2000
@@ -33,8 +33,10 @@ def EvaluateChar(stri):
             currentmaxsim=levdist(stri,alphanum[key])
             temp=key
     return temp
+
 def FlattenExtract(lst):
     return [item[0] for item in lst]
+
 def CaptchaSolver():
     global captchaAns
     right=cwidth/6
@@ -54,6 +56,7 @@ def CaptchaSolver():
         left=right
         right+=cwidth/6
 
+###DRIVER CODE###
 ImagePreprocess()
 LoadBitMap()
 CaptchaSolver()
