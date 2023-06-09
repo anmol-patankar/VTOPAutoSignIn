@@ -5,7 +5,8 @@ captchaAns=""
 count=1
 left=0
 top=0
-
+## TODO: Add Bulk KeySend
+## TODO: Find way to trigger JS script in browser without clicking action
 def ImagePreprocess():
     global cwidth,bottom,rgbimg
     im=Image.open("captcha.png").convert("L")

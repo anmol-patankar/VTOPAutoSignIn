@@ -3,6 +3,10 @@ from selenium.webdriver.common.by import By
 import time
 import urllib
 
+## TODO: Add credential persistence
+##       Add UI Input for creds
+##       Add option for persistence check
+
 user=str(input("Enter VTOP User ID: "))
 passwd=str(input("Enter VTOP Password: "))
 
